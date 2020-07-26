@@ -1,0 +1,33 @@
+{
+  "name": "alpoxdev-client",
+  "version": "2.0.1",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "deploy": "next build && sls deploy --verbose --aws-profile default",
+    "sitemap:create": "cd scripts && node sitemap.js",
+    "prettier:fix": "prettier --config ./prettier.config.js --write ./src/**/*.js ./src/**/**/*.js"
+  },
+  "dependencies": {
+    "aws-serverless-express": "3.3.8",
+    "axios": "^0.19.2",
+    "express": "4.17.1",
+    "mobx": "^5.15.4",
+    "mobx-react": "^6.2.2",
+    "next": "^9.3.1",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "styled-components": "^5.0.1"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-decorators": "^7.8.3",
+    "babel-plugin-styled-components": "1.10.7",
+    "globby": "^11.0.1",
+    "prettier": "^2.0.5",
+    "serverless-domain-manager": "4.2.0",
+    "serverless-offline": "6.5.0"
+  }
+}
